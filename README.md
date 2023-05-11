@@ -1,2 +1,2 @@
 # Python_course
-This course to learn basic in python 
+This course to learn the basics in python 
