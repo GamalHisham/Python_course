@@ -1,4 +1,3 @@
-
 # ______________________________
 # ___________Tuples_____________
 # 1- Tuple enclosed in parnetheses () , can remove parnetheses if you want
@@ -10,13 +9,13 @@
 # ______________________________
 
 # my_tuple=("gamal",12,10.5,True)
-# My_tuple="gamal",12,10.5,True #can remove parnetheses if you want
+# My_tuple="gamal",12,10.5,True       #can remove parnetheses if you want
 # print(my_tuple)
 # print(My_tuple)
 # print(type(my_tuple))
 # print(type(My_tuple))
 # print(my_tuple[0])
-# my_tuple[1]=20 #'tuple' object does not support item assignment (Immutable)
+# my_tuple[1]=20        #'tuple' object does not support item assignment (Immutable)
 
 # Tuple with one element
 # x=("gamal")
@@ -39,7 +38,7 @@
 # Tuple,list,string Repeat (*)
 # mystring="gamal"
 # mylist=["gamal"]
-# mytuple=("gamal")
+# mytuple=("gamal",)
 # print(mystring*3)
 # print(mylist*3)
 # print(mytuple*3)
@@ -59,11 +58,11 @@
 
 # Tuple Destruct
 # a=(1,2,3)
-# x,y,z,=a 
+# x,y,z,=a
 # print(x,y,z,sep="\n")
 # print(x,y,z,sep="\n") #many values to unpack (expected 3)
 # a=(1,2,3,12)
-# x,y,z=a 
+# x,y,z=a
 # print(x,y,z,sep="\n") #many values to unpack (expected 3)
-# x,y,z,_=a 
+# x,y,z,_=a
 # print(x,y,z,sep="\n")

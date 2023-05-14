@@ -8,7 +8,7 @@
 # ______________________________
 
 
-# my_list = ["one", 12, 10, 12.23, True]
+my_list = ["one", 12, 10, 12.23, True]
 
 # print(my_list)#['one', 12, 10, 12.23, True]
 # print(my_list[0])#one
@@ -20,7 +20,7 @@
 
 # print(my_list)
 # # my_list[-1] = False
-# my_list[0:3] = ["two"]# it is not necessary add three items
+# my_list[0:3] = ["two"]  # it is not necessary add three items
 # print(my_list)
 
 
@@ -29,8 +29,8 @@
 # _______________________________
 
 # append()
-# friends = ["gamal", "ahmed", "saad"]
-# new_friends = ["mahmoud", "mostafa"]
+friends = ["gamal", "ahmed", "saad"]
+new_friends = ["mahmoud", "mostafa"]
 # friends.append("mohamed")
 # friends.append(new_friends)
 # print(friends)
@@ -85,10 +85,12 @@
 
 # insert()
 # x = [2, 1, 45, 67]
-# x.insert(0, "test")
+# x.insert(0, "test")  # add "test" before index 0
 # print(x)
 
 # pop()
-# x = [2, 1, 45, 67]
+x = [2, 1, 45, 67]
 # print(x.pop(0))
+# print(x[0])
 # print(x.pop(-1))
+# print(x[-1])
