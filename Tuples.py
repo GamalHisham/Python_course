@@ -8,8 +8,8 @@
 # 6- operators used in string and list used also in tuple
 # ______________________________
 
-# my_tuple=("gamal",12,10.5,True)
-# My_tuple="gamal",12,10.5,True       #can remove parnetheses if you want
+my_tuple=("gamal",12,10.5,True)
+My_tuple="gamal",12,10.5,True       #can remove parnetheses if you want
 # print(my_tuple)
 # print(My_tuple)
 # print(type(my_tuple))
@@ -18,27 +18,31 @@
 # my_tuple[1]=20        #'tuple' object does not support item assignment (Immutable)
 
 # Tuple with one element
-# x=("gamal")
-# y="gamal"
+x=("gamal")
+y="gamal"
 # print(type(x)) #<class 'str'>
 # print(type(y)) #<class 'str'>
 
-# x=("gamal",)
-# y="gamal",
+x=("gamal",)
+y="gamal",
 # print(type(x)) #<class 'tuple'
 # print(type(y)) #<class 'tuple'
 
-# Tuple concatenation
-# x=(1,2,45)
-# y=(3,56,4)
+# Tuple concatenation & list concatenation
+x=(1,2,45)
+y=(3,56,4)
+z=[1,2]
+f=[3,4]
 
+# d = z + f
 # c= x + y
+# print(d)
 # print(c)
 
 # Tuple,list,string Repeat (*)
-# mystring="gamal"
-# mylist=["gamal"]
-# mytuple=("gamal",)
+mystring="gamal"
+mylist=["gamal"]
+mytuple=("gamal",)
 # print(mystring*3)
 # print(mylist*3)
 # print(mytuple*3)
@@ -48,21 +52,20 @@
 # ______________________________
 
 # count()
-# x=(1,3,4,5,1,2,1,567,1)
+x=(1,3,4,5,1,2,1,567,1)
 # print(x.count(1))
 
 
 # # index()
-# x=(1,3,4,5,1,2,1,567,1)
+x=(1,3,4,5,1,2,1,567,1)
 # print("the position of index is : {:d} " .format(x.index(4)))
 
 # Tuple Destruct
-# a=(1,2,3)
+a=(1,2,3)
 # x,y,z,=a
 # print(x,y,z,sep="\n")
-# print(x,y,z,sep="\n") #many values to unpack (expected 3)
-# a=(1,2,3,12)
+a=(1,2,3,12)
 # x,y,z=a
 # print(x,y,z,sep="\n") #many values to unpack (expected 3)
-# x,y,z,_=a
-# print(x,y,z,sep="\n")
+x,y,z,_=a
+print(x,y,z,sep="\n")

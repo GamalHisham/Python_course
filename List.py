@@ -43,12 +43,12 @@ new_friends = ["mahmoud", "mostafa"]
 # print(friends)
 
 # remove()
-# x = [1, 2, 3, 4, 6, 2, 45, 2]
+x = [1, 2, 3, 4, 6, 2, 45, 2]
 # x.remove(2) # remove first 2 only
 # print(x)
 
 # sort() => sorting Numbers and string
-# x = [120, 3, 23, -12, 0, 15]
+x = [120, 3, 23, -12, 0, 15]
 # x.sort()
 # print(x)
 # x.sort(reverse=False)
@@ -57,18 +57,18 @@ new_friends = ["mahmoud", "mostafa"]
 # print(x)
 
 # reverse()
-# x = ["gamal", 12, 45, 67, "saad"]
+x = ["gamal", 12, 45, 67, "saad"]
 # x.reverse()
 # print(x)
 
 # clear()
-# x = [1, 3, 2, 6, 9]
+x = [1, 3, 2, 6, 9]
 # x.clear()
 # print(x)
 
 # copy
-# x = [1, 2, 3]
-# y = x.copy()
+x = [1, 2, 3]
+y = x.copy()
 # print(x)  # main list
 # print(y)  # copied list
 # x.append(4)
@@ -76,16 +76,16 @@ new_friends = ["mahmoud", "mostafa"]
 # print(y)
 
 # count()
-# x = [2, 1, 45, 67, 2, 1, 34, 1]
+x = [2, 1, 45, 67, 2, 1, 34, 1]
 # print(x.count(1))
 
 # index()
-# friends = ["gamal", "ahmed", "saad"]
+friends = ["gamal", "ahmed", "saad"]
 # print(friends.index("saad"))
 
 # insert()
-# x = [2, 1, 45, 67]
-# x.insert(0, "test")  # add "test" before index 0
+x = [2, 1, 45, 67]
+x.insert(0, "test")  # add "test" before index 0
 # print(x)
 
 # pop()
