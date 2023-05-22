@@ -14,23 +14,27 @@
 #     print("while finished") # Else will run when while condition is false
 
 
-# friends=["gamal","saad","alaa","mohamed","eltyeb","hisham","saber","mostafa","hisham","saber"]
+#--------------------------------------------------------------------------------------------------------------
 
-# x=0
+friends=["gamal","saad","alaa","mohamed","eltyeb","hisham","saber","mostafa","hisham","saber"]
 
-# while x < len(friends):
+x=0
 
-#     print(f"# {str(x+1).zfill(2)} {friends[x]}")
+while x < len(friends):
 
-#     x += 1
+    print(f"# {str(x+1).zfill(2)} {friends[x]}")
 
-# else:
-#     print("all friends printed")
+    x += 1
+
+else:
+    print("all friends printed")
 
 
-# ------------------------
-# ----Bookmark Manage-----
-# ------------------------
+#-------------------------------------------------------------------------------------------------
+
+# --------------------------------
+# ----Bookmark Manage Example-----
+# --------------------------------
 
 # Empty list for websites
 websites = []
@@ -61,3 +65,34 @@ if len(websites) > 0:
     while index < len(websites):
         print(websites[index])
         index += 1
+
+
+#--------------------------------------------------------------------------------------------
+
+
+# ------------------------------------
+# ----Password Guess Example----------
+# ------------------------------------
+
+
+tries = 3
+correctpassword = "gamal"
+
+inputpassword = input(" Enter your password : ")
+
+while inputpassword != correctpassword :
+    tries -= 1 
+    print(f" wrong password , you have {'last' if tries==0 else tries} chance ")
+
+    inputpassword = input(" Enter your password : ")
+
+    if tries == 0 :
+
+        break
+
+else:
+    print("correct password")
+
+
+
+
