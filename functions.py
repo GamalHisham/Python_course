@@ -1,8 +1,7 @@
-
 # ______________________________
 # ___________Functions__________
-# 1- A function is a block of code do a task 
-# 2- A function run when you call it 
+# 1- A function is a block of code do a task
+# 2- A function run when you call it
 # 3- A function accept element to deal with called [parameters]
 # 4- A function can do task without returning data
 # 5- A function can return data after JOb is finished
@@ -11,7 +10,6 @@
 # 8- There's a built_in functions and user defined functions
 # 9- A function is all for team and all apps
 # ______________________________
-
 
 
 # def print_name (): #A function can do task without returning data
@@ -28,18 +26,17 @@
 
 # print(print_name())
 
-#-----------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------
 
 # ______________________________
 # ____parameters and arguments__
-#_______________________________
+# _______________________________
 
 # def                            => function keyword
 # say_hello                      => function name
 # name                           => function parameter
 # print(f"hello {name}")         => function task
 # say_hello("gamal")             => gamal is  argument
-
 
 
 # def say_hello (name):
@@ -49,7 +46,7 @@
 
 # say_hello("gamal")
 
-#-----------------------------------------------------------
+# -----------------------------------------------------------
 
 # def addition (n1,n2):
 
@@ -63,15 +60,30 @@
 
 # addition("100",300)
 
-#---------------------------------------------------------------
+# ---------------------------------------------------------------
 
 
-def full_name (f,m,l):
-
+def full_name(f, m, l):
     print(f" hello {f.strip().capitalize()} {m.upper():.1s} {l.capitalize()}")
 
 
 # full_name("  gamal   ","hisham" ,"saad")
 
+# -------------------------------------------------------------------
+
+# password guess example
 
 
+def check_paaword(password):
+    correct_paasword = "gamal123"
+
+    if password != correct_paasword:
+        print(" your password are false")
+
+    else:
+        print(" your password are true")
+
+
+# input_password = input(" enter your password please : ")
+
+# check_paaword(input_password)
