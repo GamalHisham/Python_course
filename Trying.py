@@ -47,3 +47,38 @@
 
 my_tuple = (2, 3, 1, 23, 43)
 # my_tuple[0] = 12 # through Erorr
+
+#----------------------------------------------------------------------------
+
+
+inputskills = input (" please enter your skills with rank of them separte between them with comma for Ex: (python,50%,Excel,70%)  ")
+
+inskills = inputskills.split(",")
+
+
+dictskills = dict(zip(inskills[::2], inskills[1::2])) 
+
+
+def check_job (dictskills): 
+
+    right_skills = {
+        "python":"70%",
+        "Excel":"80%",
+        "Power_pi":"60%",
+    }
+
+
+    if dictskills == right_skills :
+
+        print(" you are qualified for this job")
+
+    else:
+
+        print(" you are not  qualified for this job")
+
+    
+# check_job(dictskills)
+
+
+
+
