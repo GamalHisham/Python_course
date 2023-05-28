@@ -63,8 +63,8 @@
 # ---------------------------------------------------------------
 
 
-def full_name(f, m, l):
-    print(f" hello {f.strip().capitalize()} {m.upper():.1s} {l.capitalize()}")
+# def full_name(f, m, l):
+#     print(f" hello {f.strip().capitalize()} {m.upper():.1s} {l.capitalize()}")
 
 
 # full_name("  gamal   ","hisham" ,"saad")
@@ -74,16 +74,105 @@ def full_name(f, m, l):
 # password guess example
 
 
-def check_paaword(password):
-    correct_paasword = "gamal123"
+# def check_paaword(password):
+#     correct_paasword = "gamal123"
 
-    if password != correct_paasword:
-        print(" your password are false")
+#     if password != correct_paasword:
+#         print(" your password are false")
 
-    else:
-        print(" your password are true")
+#     else:
+#         print(" your password are true")
 
 
 # input_password = input(" enter your password please : ")
 
 # check_paaword(input_password)
+
+# ----------------------------------------------------------------------------
+
+# -----------------------------------------------------
+# -----function packing , unpacking argument *Argum----
+# -----------------------------------------------------
+
+# x = [1, 2, 3, 4]
+# print(x)
+
+# print(*x)
+
+# Ex :1
+# def say_hello(n1, n2, n3, n4):
+#     peoples = [n1, n2, n3, n4]
+
+#     for name in peoples:
+#         print(f" hello {name}")
+
+
+# say_hello("gamal", "saad", "emad", "ahmed")
+
+
+# print("=" * 50)
+
+
+# def say_hello(*peoples): # when don't know number of parameters use *Argument
+#     for name in peoples:
+#         print(f" hello {name}")
+
+
+# say_hello("gamal", "saad", "emad", "ahmed", "saber")
+
+
+# Ex:2
+
+
+# def my_skill(name, *skills):
+#     print(f" I am {name}, I have skills :")
+
+#     for skll in skills:
+#         print(f" {skll} ")
+
+
+# my_skill("gamal", "sql", "Excel", "python")
+
+# print("=" * 50)
+
+# my_skill("saad", "sql", "Excel", "python", "R", "tableau")
+
+# ----------------------------------------------------------------------------------
+
+# -----------------------------------------------------------------
+# -----function packing , unpacking argument **kwArgum(keyword)----
+# -----------------------------------------------------------------
+
+
+def my_skill(**skills):  # **skills => should pass Arg as dict
+    print(type(skills))
+    for skll in skills:
+        print(f" {skll} ")
+
+
+# my_skill(sql="60%", excel="40%", python="90%")
+
+dictskills = {"sql": "60%", "excel": "40%", "python": "90%"}
+
+# my_skill(dictskills) # through error must unpacking Arg (**dictskills)
+
+my_skill(**dictskills)
+
+# ----------------------------------------------------------------------
+
+# -----------------------------------------------------
+# -----function default parameters----------------------
+# -----------------------------------------------------
+
+
+# def info(name="unknown", age="unknown", country="unknown"):
+#     print(f"my name is {name} has {age} year and from {country} ")
+
+
+# info("gamal", 26, "ksa")
+# info("saad", 24)           # if you don't pass parameter,type default
+# info("emad")
+# info()
+# info("saber", 29, "Egy")
+
+# -------------------------------------------------------------------------
