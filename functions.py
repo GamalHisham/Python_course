@@ -113,7 +113,7 @@
 # print("=" * 50)
 
 
-# def say_hello(*peoples): # when don't know number of parameters use *Argument
+# def say_hello(*peoples): # when don't know number of parameters use (*Argument)
 #     for name in peoples:
 #         print(f" hello {name}")
 
@@ -150,13 +150,13 @@ def my_skill(**skills):  # **skills => should pass Arg as dict
         print(f" {skll} ")
 
 
-# my_skill(sql="60%", excel="40%", python="90%")
+# my_skill(sql="60%", excel="40%", python="90%")  # first solution
 
 dictskills = {"sql": "60%", "excel": "40%", "python": "90%"}
 
 # my_skill(dictskills) # through error must unpacking Arg (**dictskills)
 
-my_skill(**dictskills)
+my_skill(**dictskills)  # second solution
 
 # ----------------------------------------------------------------------
 
