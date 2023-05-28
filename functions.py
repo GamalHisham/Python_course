@@ -144,19 +144,19 @@
 # -----------------------------------------------------------------
 
 
-def my_skill(**skills):  # **skills => should pass Arg as dict
-    print(type(skills))
-    for skll in skills:
-        print(f" {skll} ")
+# def my_skill(**skills):  # **skills => should pass Arg as dict
+#     print(type(skills))
+#     for skll in skills:
+#         print(f" {skll} ")
 
 
 # my_skill(sql="60%", excel="40%", python="90%")  # first solution
 
-dictskills = {"sql": "60%", "excel": "40%", "python": "90%"}
+# dictskills = {"sql": "60%", "excel": "40%", "python": "90%"}
 
 # my_skill(dictskills) # through error must unpacking Arg (**dictskills)
 
-my_skill(**dictskills)  # second solution
+# my_skill(**dictskills)  # second solution
 
 # ----------------------------------------------------------------------
 
@@ -176,3 +176,25 @@ my_skill(**dictskills)  # second solution
 # info("saber", 29, "Egy")
 
 # -------------------------------------------------------------------------
+
+# Ex:
+
+mytuple = ("html", "css", "Js")
+mydict = {"sql": "60%", "excel": "40%", "python": "90%"}
+
+
+def show_skills(name, *skills, **skillswithrank):
+    print(f" Hello {name} \nyour skills without Rank Is : ")
+
+    for skill in skills:
+        print(f"- {skill}")
+
+    print(f" Hello {name} \nyour skills with Rank Is : ")
+
+    for skill_key, skill_value in skillswithrank.items():
+        print(f"{skill_key} => {skill_value} ")
+
+
+# show_skills("gamal","html", "css", "Js" )
+
+show_skills("gamal", *mytuple, **mydict)
