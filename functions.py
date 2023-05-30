@@ -197,4 +197,50 @@ def show_skills(name, *skills, **skillswithrank):
 
 # show_skills("gamal","html", "css", "Js" )
 
-show_skills("gamal", *mytuple, **mydict)
+# show_skills("gamal", *mytuple, **mydict)
+
+
+# ----------------------------------
+# -------Function Scope-------------
+# ----------------------------------
+
+# x = 5
+
+# def one():
+#     print(f" {x}")
+
+
+# print(f" {x}")
+# one()
+# ---------------------------
+# x = 5
+
+# def one():
+#     x = 10
+#     print(f" {x}")
+
+
+# print(f" {x}")
+# one()
+# ------------------------------
+# x = 5
+
+# def one():
+#     global x
+#     x = 10
+#     print(f" {x}")
+
+
+# print(f" {x}")
+# one()
+# ----------------------------
+# x = 5
+
+# def one():
+#     global x
+#     x = 10
+#     print(f" {x}")
+
+
+# one()
+# print(f" {x}")
