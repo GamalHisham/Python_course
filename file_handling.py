@@ -9,21 +9,19 @@
 # I have two type from paths [Absloute-Relative]
 
 
-# import os  # os => operating system
+# import os  # Module os => operating system
 
 # print(os.getcwd())  # cwd => current working dir   # C:\python_course\Python_course
 
-# print(
-#     os.path.dirname(os.path.abspath(__file__))
-# )  # c:\python_course\Python_course=> dir for opened file
+# print(os.path.dirname(os.path.abspath(__file__)))  # c:\python_course\Python_course=> dir for opened file
 
-# print(
-#     os.path.abspath(__file__)
-# )  # c:\python_course\Python_course\file_handling.py => opened file
+# print(os.path.abspath(__file__))  # c:\python_course\Python_course\file_handling.py => opened file
 
-# # change current working dir
+# change current working dir
 # os.chdir(os.path.dirname(os.path.abspath(__file__)))
 # print(os.getcwd())
+
+# os.remove("E:\nfile\gamal.txt")  # remove file
 
 # open("path","mode")
 
@@ -55,7 +53,7 @@
 # print(my_file.read(5))  # read 5 bytes from line
 
 
-# print(my_file.readlines())      # raed line and return data in list
+# print(my_file.readlines())  # raed line and return data in list
 # print(type(my_file.readlines()))
 
 
@@ -83,13 +81,29 @@
 
 # my_list = ["gamal\n", "saad\n", "emad\n"]
 
-# my_file.writelines(my_list) # add list only
+# my_file.writelines(my_list)  # add list only
 
 
-my_file = open(
-    "C:\python_course\Python_course\emad.txt", "a"
-)  # if file don't exist create it
+# my_file = open("C:\python_course\Python_course\emad.txt", "a")  # if file don't exist create it
 
-my_file.write("gamal\n")
-my_file.write("saad\n\n\n")
-my_file.write("emad")
+# my_file.write("gamal\n")
+# my_file.write("saad\n\n\n")
+# my_file.write("emad")
+# my_file.write("hisham")
+# -------------------------------------------------------------------------------------
+
+# ----------------------------------
+# --file handling => Important Info-
+# ----------------------------------
+
+
+# myfile = open("C:\python_course\Python_course\important.txt", "a")
+# myfile.truncate(10)  # read only 10 bytes and remove others data
+
+
+# print(myfile.tell())   # know me last position of cursor
+
+# myfile = open("C:\python_course\Python_course\important.txt", "r")
+
+# myfile.seek(12)  # position which i will start read from it
+# print(myfile.read())
