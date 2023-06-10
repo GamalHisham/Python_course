@@ -69,7 +69,58 @@ def formattext(text):
 
 mynames = ["Ahmed", "saad", "Attia", "gamal", "Alex"]
 
-myresult = filter(lambda name: name.startswith("A"), mynames)
+# myresult = filter(lambda name: name.startswith("A"), mynames)
 
-for name in myresult:
-    print(name)
+# for name in myresult:
+#     print(name)
+
+# --------------------------------------------------------------------
+# Reduce() => must import "from functools import reduce"
+# [1] take fun and iterable
+# [2] run fun with first element and second element and give result
+# [3] then run fun with first result and third element
+# [4] then run fun with second result and fourth element and so on
+# [5] fun can be pre-defined or lambda fun
+
+
+from functools import reduce
+
+# def sumall(num1, num2):
+#     return num1 + num2
+
+
+# numbers = [1, 2, 5, 7, 100]
+
+# results = reduce(sumall, numbers)  # ((((1+2)+5)+7)+100)
+
+# results = reduce(lambda num1, num2: num1 + num2, numbers)
+
+# print(results)
+
+# ------------------------------------------------------------
+# enumerate() # add counter to every element in iterable
+
+# myskills = ["Sql", "Python", "Excel"]
+
+# counterskills = enumerate(myskills)
+
+# for skill in counterskills:
+#     print(skill)
+
+
+# for counter, skill in counterskills:
+#     print(f" {counter} - {skill} ")
+
+# ---------------------------------------------------------------------
+
+# help(name of fun)
+
+# print(help(enumerate))
+
+# ---------------------------------------------------------------------
+# reversed() => reverse iterable
+
+myskills = ["Sql", "Python", "Excel"]
+
+# for skill in reversed(myskills):
+#     print(skill)
